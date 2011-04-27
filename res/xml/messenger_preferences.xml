@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Moodle Credentials">
+          <EditTextPreference
+                android:dialogTitle="Username"
+                android:title="Edit Moodle Username"
+                android:key="@string/moodle_user_key"/>
+
+          <EditTextPreference
+                android:dialogTitle="Password"
+                android:title="Edit Moodle Password"
+                android:password="true"
+                android:key="@string/moodle_pwd_key"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Synchronization">
+
+        <ListPreference
+            android:title="Message Check Frequency"
+            android:summary="The frequency the app will check moodle for new messages"
+            android:key="message_interval_key"
+            android:defaultValue="@string/message_interval_default"
+            android:entries="@array/message_interval_array"
+            android:entryValues="@array/message_interval_values" />
+
+        <ListPreference
+            android:title="Contact Update Frequency"
+            android:summary="The frequency the app will check moodle for new course contacts"
+            android:key="contact_interval_key"
+            android:defaultValue="@string/contact_interval_default"
+            android:entries="@array/contact_interval_array"
+            android:entryValues="@array/contact_interval_values" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Message Alert">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="New Message Alert"
+            android:summary="play alert tone and status bar notification when new messages are received"
+            android:key="@string/message_alert_key"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="New Message Vibrate"
+            android:summary="Vibrate when new messages are received"
+            android:key="@string/message_vibrate_key"/>
+
+        <RingtonePreference
+            android:summary="Select a new message alert tone"
+            android:title="Message Alert Tone"
+            android:key="@string/alert_tone_key" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
+

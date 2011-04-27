@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mobilevle.messenger"
+          android:versionCode="1"
+          android:versionName="1">
+    <uses-sdk android:minSdkVersion="1" android:targetSdkVersion="4"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/mvle">
+        <activity android:name=".MVLESessionValidator"
+                  android:label="@string/app_name"
+                  android:icon="@drawable/mvle"
+                  android:multiprocess="false"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MVLELogin" android:label="@string/app_name"/>
+        <activity android:name=".MainMenuTabWidget" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".MVLEContactsActivity" android:label="@string/app_name"/>
+        <activity android:name=".MVLESearchContactsActivity" android:label="@string/app_name"/>
+        <activity android:name=".MVLEConversationsActivity" android:label="@string/app_name"/>
+        <activity android:name=".MVLEConversationActivity" android:label="@string/app_name"/>
+        <activity android:name=".MVLEMessageActivity" android:label="@string/app_name"/>
+        <activity android:name=".MVLEMessengerPreferences" android:label="@string/edit_preferences"/>
+
+        <receiver android:name=".MessengerStartUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MessageSyncService">
+            <intent-filter>
+                <action android:name="com.mobilevle.messenger.MessageSyncService" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".ContactSyncService">
+            <intent-filter>
+                <action android:name="com.mobilevle.messenger.ContactSyncService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

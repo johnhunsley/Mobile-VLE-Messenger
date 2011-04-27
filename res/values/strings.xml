@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile VLE Messenger</string>
+    <string name="messenger">Messenger</string>
+    <string name="edit_preferences">Edit Messenger Settings</string>
+    <string name="message_interval_key">message_interval</string>
+    <string name="message_interval_default">60000</string>        <!-- 1 minute in millis -->
+    <string name="contact_interval_key">contact_interval</string>
+    <string name="contact_interval_default">7200000</string>     <!-- 720000 2 hours in millis -->
+    <string name="moodle_user_key">moodle_username</string>
+    <string name="moodle_pwd_key">moodle_password</string>
+    <string name="message_alert_key">message_alert</string>
+    <string name="alert_tone_key">alert_tone</string>
+    <string name="message_vibrate_key">vibrate_alert</string>
+    <string name="new_message">New Message</string>
+    <string name="search_field_key">search_field</string>
+    <string name="search">Search</string>
+    <string name="send">Send</string>
+    <string name="search_prompt">The user field to search</string>
+    <string name="search_field_text">Select the user field to search on</string>
+    <string name="results_field_text">Search results -</string>
+    <string name="invalid_session_message">Unable to synchronize contacts, please check moodle credentials in settings and try again</string>
+    <string name="no_contacts">No contacts currently in your list, try updating now - Menu - Update Now</string>
+    <string name="no_messages">No conversations</string>
+</resources>

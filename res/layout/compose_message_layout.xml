@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+
+
+        <AutoCompleteTextView android:id="@+id/auto_complete_recipients"
+                android:layout_width="fill_parent"        
+                android:layout_height="wrap_content"
+                android:hint="Search contacts"
+                android:completionThreshold="1"/>
+
+    <EditText android:id="@+id/message_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false" android:lines="8"              
+            android:gravity="top"
+            android:layout_weight="1"
+            android:hint="Type message ...... "/>
+
+    <Button android:id="@+id/message_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</LinearLayout>

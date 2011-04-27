@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <EditText android:id="@+id/search_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for...."/>
+
+        <TextView android:id="@+id/search_field_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_field_text"/>
+
+        <Spinner android:id="@+id/search_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/search_prompt"
+
+            android:key="search_field_key"
+            android:entries="@array/search_field_array"
+            android:entryValues="@array/search_field_values" />
+
+        <Button android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView android:id="@+id/results_field_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <ListView android:id="@+id/results_list" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+</LinearLayout>
