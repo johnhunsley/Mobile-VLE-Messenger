@@ -145,7 +145,7 @@ You will see a target/ directory created in this directory, in there you'll find
 and Android file using the Android sdk. Ensure your phone is connected to your computer with remote debugging enabled and is mounted as a drive.
 Push the app to the phone using the following command 
 
-./adb -d install -r /home/johnhunsley/check_out/Mobile_VLE_Marketing/target/Mobile_VLE_Marketing-1.0.apk
+./adb -d install -r /path/to/build/Mobile_VLE_Marketing-1.0.apk
 
 You should now be able to open the app, send and recieve messages via Moodle :-) 
 
